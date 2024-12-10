@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title> Toggle Bulb</title>
+	<style type="text/css">
+		.app-title{
+			text-align:center;
+
+		}
+		.bulb-image{
+			height:200px;
+			display:block;
+			margin:0 auto;
+		}
+		.button-container{
+			display:flex;
+			justify-content:space-evenly;
+		}
+		.btn{
+			font-size:30px;
+			padding:20px;
+
+		}
+	</style>
+</head>
+<body>
+	<h1 class="app-title"> Toggle button </h1>
+	<img src="./img/th.jpeg" class="bulb-image" id="bulb-image"/>
+
+	<div class="button-container">
+		<button type= "button" class="btn"onclick="bulbON()">ON</button>
+		<button type= "button" class="btn" onclick="bulbOFF()">OFF</button>
+
+	</div>
+	<script>
+		function bulbON(){
+			const bulbImg= document.getElementById("bulb-image");
+			bulbImg.src="./img/bulb.jpeg";
+			}
+		function bulbOFF(){
+			const bulbImg= document.getElementById("bulb-image");
+			bulbImg.src="img/th.jpeg";
+
+			
+		}
+		</script>
+</body>

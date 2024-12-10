@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title> THEME</title>
+	<style type="text/css">
+		.app-title{
+			text-align: center;
+		}
+		.body-light{
+			color:black;
+			background-color: antiquewhite;
+
+		}
+		.body-dark{
+			color: bisque;
+			background-color: rgb(126, 110, 110);
+		}
+	</style>
+</head>
+<body class="body-dark" id="body">
+	<h1 class="app-title"> THEME </h1>
+
+	<button type="button" onClick="toggleLightTheme()">
+		LIGHT
+	</button>
+
+	<button type="button" onClick="toggleDarkTheme()">
+		DARK
+	</button>
+  
+	<script>
+		function toggleDarkTheme()
+		{
+          const bodyElement=document.getElementById('body');
+		  bodyElement.classList.remove('body-light');
+		  bodyElement.classList.add('body-dark');
+		}
+		function toggleLightTheme()
+		{
+			const bodyElement=document.getElementById('body');
+		  bodyElement.classList.add('body-light');
+		  bodyElement.classList.remove('body-dark');
+        
+		}
+	</script>
+	</body>
+</body>
